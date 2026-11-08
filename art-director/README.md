@@ -1,14 +1,10 @@
-# Sub-skill art-director
+# Sub-skill: Art Director
 
-Direccion de arte y concepto visual para imagenes IA.
+Use this direction to develop the visual concept for an AI-generated image.
 
-## Uso
+## Include
 
-```python
-from tiento import build_brief
-brief = build_brief(
-    skill="art-director",
-    subject="Ilustracion editorial de portada",
-    aspect_ratio="1:1",
-)
-```
+- The core idea and subject.
+- Composition, focal point, and framing.
+- Visual style, palette, and lighting when relevant.
+- Aspect ratio, references, and elements to avoid.

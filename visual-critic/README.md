@@ -1,3 +1,10 @@
-# Sub-skill visual-critic
+# Sub-skill: Visual Critic
 
-Critica visual de mockups para imagenes IA.
+Use this direction to review an existing image or interface mockup.
+
+## Review
+
+- Readability, hierarchy, and focal point.
+- Composition, spacing, and alignment.
+- Color, contrast, and visual consistency.
+- Concrete improvements, prioritized by impact.

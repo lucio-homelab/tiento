@@ -1,51 +1,41 @@
 ---
 name: tiento
 version: 0.1.0
-description: Skill de Hermes adaptado del plugin ChatGPT "tiento" para generación de imágenes IA. Provee breves de dirección de arte y esqueleto de generación de imagen.
+description: Art direction for thoughtful AI image generation.
 author: LucioB16
-origin: https://github.com/LucioB16/chatgpt-plugins (carpeta tiento/)
 license: MIT
-sub_skills:
-  - art-director
-  - interface-director
-  - visual-critic
-cli:
-  commands:
-    - name: --list
-      description: Lista los sub-skills disponibles
-    - name: --validate
-      description: Valida un breve de habilidad
 ---
 
-# Skill Tiento
+# Tiento
 
-Skill de Hermes para apoyar la generación de imágenes IA con dirección visual clara, adaptado del plugin ChatGPT `tiento` del repositorio [`github.com/LucioB16/chatgpt-plugins`](https://github.com/LucioB16/chatgpt-plugins).
+Tiento helps shape the visual direction behind AI-generated images. It creates a clear, prompt-ready brief; it does not render images by itself.
 
-Este es un **esqueleto**: define la estructura de breves (art-director, interface-director, visual-critic) y un punto de extensión `generate_image` que, por ahora, devuelve un mensaje de esqueleto sin renderizar realmente.
+## When to Use
 
-## Sub-skills
+- Develop a visual concept or art direction for an image.
+- Plan the composition, visual style, and framing for an image-generation workflow.
+- Design an interface mockup concept.
+- Critique an existing image or mockup.
 
-- `art-director/` — dirección de arte y concepto visual.
-- `interface-director/` — diseño de interfaz y mockups.
-- `visual-critic/` — crítica visual de mockups.
+## Procedure
 
-## Uso desde CLI
+1. Identify whether the request is for art direction, an interface mockup, or a visual critique. Combine these only when the user asks for it.
+2. Gather the details that materially affect the direction: subject, purpose, audience, medium, aspect ratio, references, and exclusions. Ask only for missing details that cannot be reasonably inferred.
+3. For art direction, return a concept, composition and focal hierarchy, visual style, palette or lighting where relevant, framing, and exclusions.
+4. For interface mockups, describe the user task, screen hierarchy, layout, key components, and visual style. Do not present a concept as a working interface.
+5. For critiques, ground each finding in visible details and prioritize the changes by impact.
+6. If the user asks to render an image and an image-generation tool is available, use it. Otherwise, return a prompt-ready direction and make clear that no image was rendered.
 
-```
-python tiento.py --list
-python tiento.py --validate
-```
+## Modes of Work
 
-## Uso desde Python
+- Art direction develops a visual concept and composition.
+- Interface direction plans layouts and mockups.
+- Visual critique reviews existing images and mockups.
 
-```python
-from tiento import list_skills, build_brief, generate_image
+## Verification
 
-skills = list_skills()
-brief = build_brief(skill="art-director", subject="Ilustración editorial de portada")
-result = generate_image(brief)
-```
+Before returning a direction, check that it matches the brief, states a usable composition and style, respects the requested format and exclusions, and distinguishes a prompt or concept from a rendered image.
 
-## Licencia
+## Origin
 
-MIT. Ver [LICENSE](LICENSE).
+Tiento adapts the `tiento` plugin from [`LucioB16/chatgpt-plugins`](https://github.com/LucioB16/chatgpt-plugins) (folder `tiento/`).
