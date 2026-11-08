@@ -1,6 +1,6 @@
 # Sub-skill art-director
 
-Direccion de arte y concepto visual para imagenes IA tasteful (LinkedIn).
+Direccion de arte y concepto visual para imagenes IA.
 
 ## Uso
 
@@ -8,7 +8,7 @@ Direccion de arte y concepto visual para imagenes IA tasteful (LinkedIn).
 from tiento import build_brief
 brief = build_brief(
     skill="art-director",
-    subject="Ilustracion de portada para LinkedIn",
+    subject="Ilustracion editorial de portada",
     aspect_ratio="1:1",
 )
 ```

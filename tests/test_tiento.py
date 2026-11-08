@@ -24,13 +24,13 @@ def test_list_skills_returns_three_skills() -> None:
 def test_build_brief_valid_skill() -> None:
     brief = build_brief(
         skill="art-director",
-        subject="Ilustracion de portada para LinkedIn",
+        subject="Ilustracion editorial de portada",
         audience="profesionales",
         medium="digital",
         aspect_ratio="1:1",
     )
     assert brief.skill == "art-director"
-    assert brief.subject == "Ilustracion de portada para LinkedIn"
+    assert brief.subject == "Ilustracion editorial de portada"
     assert brief.exclusions == []
     assert brief.references == []
     print("OK test_build_brief_valid_skill")

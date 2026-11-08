@@ -3,7 +3,7 @@
 
 Adaptado del plugin ChatGPT "tiento" (github.com/LucioB16/chatgpt-plugins).
 Provee listado de sub-skills, construccion de breves y esqueleto de
-generacion de imagenes IA para LinkedIn.
+generacion de imagenes IA.
 
 Uso:
     python tiento.py --list

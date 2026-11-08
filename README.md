@@ -1,16 +1,17 @@
 # Tiento
 
-Art-direction for AI-generated images with taste.  
-A Hermes skill that turns a creative brief into structured image-direction — concept, composition, and visual style — without generic, soulless results.
+Tiento supports thoughtful, well-directed AI image generation across creative work. It turns a brief into structured image direction — concept, composition, and visual style — so imagery feels intentional rather than generic.
 
-![Tiento mark (dark)](docs/assets/tiento-mark-dark.svg "Tiento mark — dark variant")
-![Tiento mark (light)](docs/assets/tiento-mark-light.svg "Tiento mark — light variant")
+![Tiento hero banner](docs/assets/hero-banner.png)
+
+![Tiento mark (dark)](docs/assets/tiento-mark-dark.png "Tiento mark — dark variant")
+![Tiento mark (light)](docs/assets/tiento-mark-light.png "Tiento mark — light variant")
 
 ## The problem
 
-Most AI image generators produce pleasant but generic images. They lack a point of view: no art direction, no consistent visual language, no deliberate composition. You get an image, not a visual idea.
+AI image generation can produce polished images that still feel generic when the direction is unclear. Without a point of view, compositions and visual language can drift.
 
-Tiento exists to close that gap. It is a skill for Hermes that gives you structured art-direction primitives — briefs, skill routing, and a generation skeleton — so the images you produce carry intention instead of accident. Whether you're illustrating a presentation, a social post, a product mockup, or an editorial piece, Tiento helps you steer the output toward good taste rather than generic AI output.
+Tiento helps shape the direction behind generated images. As a Hermes skill, it provides structured briefs, skill routing, and a generation skeleton to support intentional visual choices across subjects, formats, and creative workflows.
 
 ## What's inside
 
@@ -31,8 +32,6 @@ Tiento routes a creative brief through a sub-skill and produces a structured dir
 ```text
 Brief ──► [ skill selection ] ──► [ art direction ] ──► Image direction
 ```
-
-> **Brand marks.** `tiento-mark-dark.svg` and `tiento-mark-light.svg` are the user's Tiento logos (also used in the ChatGPT plugin). They are referenced here as placeholders because the SVG files were not available in this workspace. Replace `docs/assets/tiento-mark-dark.svg` and `docs/assets/tiento-mark-light.svg` with the actual files, or coordinate with the Coordinator to add them to the repository.
 
 ## Getting started
 
